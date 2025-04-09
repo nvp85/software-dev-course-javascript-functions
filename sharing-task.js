@@ -35,10 +35,7 @@ reusable functions that solve specific tasks. This activity encourages:
 // 2. Format the output string properly.
 // 3. Capitalize the role if needed.
 // 4. Return the result.
-function generateBadge(name, role) {
-    return `Name: ${name}, Role: ${role}`;
-}
-console.log(generateBadge("Alice", "Developer"));
+
 // ============================================
 // 🧩 Task 2: Calculate Event Cost
 // ============================================
@@ -53,17 +50,6 @@ console.log(generateBadge("Alice", "Developer"));
 // 3. If so, apply a 10% discount.
 // 4. Return the final total.
 
-function calculateEventCost(attendees, price) {
-    let totalCost = attendees * price;
-    if (attendees > 100) {
-        return totalCost * 0.9;
-    }
-    return totalCost;
-}
-
-console.log(calculateEventCost(120, 50));
-console.log(calculateEventCost(80, 50));
-
 // ============================================
 // 🧩 Task 3: Validate Email
 // ============================================
@@ -76,13 +62,6 @@ console.log(calculateEventCost(80, 50));
 // 1. Check if the string includes both "@" and ".".
 // 2. Return true or false accordingly.
 
-function validateEmail(email) {
-    return email.includes(".") && email.includes("@");
-}
-
-console.log(validateEmail("alice@example.com"));
-console.log(validateEmail("aliceexample.com"));
-console.log(validateEmail("alice@examplecom"));
 // ============================================
 // 🧠 Collaborative Steps
 // ============================================
@@ -107,4 +86,31 @@ console.log(validateEmail("alice@examplecom"));
 // - Explain how your team approached the design and testing process
 
 // ✅ Bonus: Can you extend any of the functions to be more flexible or reusable?
-// Note: I typed in parallel with my classmate so the code is a bit different
+
+
+// task 1 
+function generateBadge(name, role) {
+    return `Name: ${name}, Role: ${role}`;
+}
+console.log(generateBadge("Alice", "Developer"));
+
+// task 2
+function calculateEventCost(attendees, price) {
+    let totalCost = attendees * price;
+    if (attendees > 100) {
+        return totalCost * 0.9;
+    }
+    return totalCost;
+}
+
+console.log(calculateEventCost(120, 25));
+console.log(calculateEventCost(80, 50));
+
+// task 3
+function validateEmail(email) {
+    return email.includes(".") && email.includes("@");
+}
+
+console.log(validateEmail("alice@example.com"));
+console.log(validateEmail("aliceexample.com"));
+console.log(validateEmail("alice@examplecom"));
